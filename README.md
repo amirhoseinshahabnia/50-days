@@ -1,4 +1,4 @@
-#50days
+# 50days
 This project is to track 50 HTML/CSS/JS projects that will be done for the next 50 days. The course is based on [bradtraversy](https://github.com/bradtraversy/50projects50days) course on Udemy.
 
 Here is a list of the projects, with their corresponding day # and descriptions
