@@ -7,3 +7,4 @@ Here is a list of the projects, with their corresponding day # and descriptions
 | ------------- | ------------- | ------------- |
 | 01 | [Expanding Cards](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_1)  | A simple project utilizing JS to add/remove CSS class + utilizing css transitions |
 | 02 | [Progress Steps](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_2) | Progress steps tracker with btns to navigate between steps - simple css transitions + using activeIndex for tracking each step |
+| 03 | [Rotating Navigation](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_3) | A nice rotating effect upon menu click implemented via CSS rotate and transform props |
