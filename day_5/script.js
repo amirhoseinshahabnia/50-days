@@ -13,14 +13,13 @@ function blur() {
   }
 
   loader.innerHTML = `${load_percent}%`;
-  loader.style.opacity = scale(load_percent, 100, 0, 0, 1);
-  bg.style.filter = `blur(${scale(load_percent, 100, 0, 0, 30)}px)`;
+  loader.style.opacity = scale(load_percent, 0, 100, 1, 0);
+  bg.style.filter = `blur(${scale(load_percent, 0, 100, 30, 0)}px)`;
 }
 
-function scale(number, in_max, in_min, out_max, out_min) {
-  return (
-    out_min + ((number - in_min) * (out_max - out_min)) / (in_max - in_min)
-  );
+// to map a renage of number to another range of numbers
+function scale(number, inMin, inMax, outMin, outMax) {
+  return ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
 }
 
 console.log(scale(30, 100, 0, 10, 0));
