@@ -1,18 +1,17 @@
 const boxes = document.querySelectorAll('.box');
 
-const showBoxes = () => {
-  const triggerPoint = (window.innerHeight / 5) * 3.5;
-
-  boxes.forEach((box) => {
-    const boxTopLimit = box.getBoundingClientRect().y;
-
-    if (boxTopLimit < triggerPoint) {
-      box.classList.add('show');
-    } else {
-      box.classList.remove('show');
-    }
-  });
+let options = {
+  root: null,
+  rootMargin: '0px 100% 0px 100%',
+  threshold: 0.6,
 };
 
-showBoxes();
-document.addEventListener('scroll', showBoxes);
+let observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle('show', entry.isIntersecting);
+  });
+}, options);
+
+boxes.forEach((box) => {
+  observer.observe(box);
+});
