@@ -12,3 +12,4 @@ Here is a list of the projects, with their corresponding day # and descriptions
 | 05 | [Blurry Loading](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_5) | A blurry loading effect which blurs out the image as the loader loads  |
 | 06 | [Scroll Animation](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_6) | Fading and transitionng cars into screen as scrolled into view, utlizing intersection observer API  |
 | 07 | [Split Landing Page](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_7) | A css split screen landing page with transitions implemented and minor js functionality |
+| 08 | [Form Wave Animation](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_8) | A cool wave-like animation on form labels - wrapping each label's char by a span, and utlizing CSS next-sibling selector (+) to apply the effect |
