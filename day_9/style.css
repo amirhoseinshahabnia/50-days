@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
+  overflow: hidden;
+  background-color: #a08b5d;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 30px;
+}
+
+.box {
+  padding: 15px 30px;
+  background-color: #f4ba3e;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: #eaf5a1;
+}
+
+.box.active {
+  background-color: #f5f565;
+}
