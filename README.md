@@ -15,3 +15,4 @@ Here is a list of the projects, with their corresponding day # and descriptions
 | 08 | [Form Wave Animation](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_8) | A cool wave-like animation on form labels - wrapping each label's char by a span, and utlizing CSS next-sibling selector (+) to apply the effect |
 | 09 | [Sound Board](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_9) | Utilizing browser Audio api to play sounds effect - using js to stop other tracks and only play the clicked one |
 | 10 | [Dad Jokes](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_10) | Fetching dad jokes from API using fetch and showing a random one - simple UI loading state for when fetching data |
+| 11 | [Event KeyCodes](https://github.com/amirhoseinshahabnia/50-days/tree/main/day_11) | Showing event properties for key pressdown events - simple loading state management to show the right UI elements |
