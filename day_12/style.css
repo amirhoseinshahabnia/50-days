@@ -1,0 +1,139 @@
+:root {
+  --main-bg: #f6f2ec;
+  --main-bg-accent: #e6dcd3;
+  --main-color: #bda18c;
+  --main-dark: #3f352c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
+}
+
+h3,
+h4 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 0;
+  background-color: var(--main-bg);
+}
+
+.lds-hourglass {
+  display: none;
+}
+
+.quiz-item {
+  padding: 20px;
+  border: 1px solid #000;
+  width: 600px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.quiz-item:hover {
+  opacity: 0.75;
+}
+
+.quiz-item:last-child {
+  margin-bottom: 0;
+}
+
+.quiz-item .answer,
+.quiz-item.active .question {
+  display: none;
+}
+
+.quiz-item.active .answer {
+  display: block;
+}
+
+.question {
+  color: var(--main-dark);
+}
+
+.answer {
+  color: var(--main-color);
+}
+
+.question,
+.answer {
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.question::after,
+.answer::after {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 10px);
+  width: 10px;
+  height: 20px;
+}
+
+.question::after {
+  content: '+';
+  color: var(--main-dark);
+}
+
+.answer::after {
+  content: '-';
+  color: var(--main-color);
+}
+
+.loading .lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loading .lds-hourglass:after {
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid var(--main-bg-accent);
+  border-color: var(--main-bg-accent) transparent var(--main-bg-accent)
+    transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
