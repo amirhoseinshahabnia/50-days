@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
+  overflow: hidden;
+}
+
+:root {
+  --primary-color: #3c4dff;
+  --dark-color: #4e516b;
+  --neutral-color: #8e92c0;
+  --dark-color-gray: #3a3a41;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--dark-color);
+  position: relative;
+}
+
+h1 {
+  color: var(--neutral-color);
+}
+
+.circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--neutral-color);
+  opacity: 0;
+  transition: all 0.2 ease-in;
+  z-index: 0;
+}
+
+button {
+  position: relative;
+  z-index: 1;
+  border: none;
+  background-color: var(--dark-color-gray);
+  color: var(--neutral-color);
+  padding: 15px 30px;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-position: center;
+  transition: background 0.8s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.ripple .ripple-circle {
+  position: absolute;
+  z-index: 2;
+  background-color: var(--neutral-color);
+  height: 20px;
+  width: 20px;
+  transform-origin: center;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.5s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
