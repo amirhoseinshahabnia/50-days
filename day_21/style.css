@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-bg: #efe6d2;
+  --dark-color: #332f0e;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+body {
+  font-family: "Lora", serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--main-bg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0 auto;
+  gap: 25px;
+}
+
+.item {
+  border: 2px solid var(--dark-color);
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.fill {
+  background: url(https://source.unsplash.com/random/100x100);
+  background-size: cover;
+  background-position: center;
+  width: 96px;
+  height: 96px;
+}
+
+.hold {
+  border: 1px solid #ccc;
+}
+
+.hovered {
+  background-color: var(--dark-color);
+  border-color: #fff;
+  border-style: dashed;
+}
