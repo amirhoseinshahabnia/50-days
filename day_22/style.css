@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+body {
+  font-family: "Lora", serif;
+  background-color: #e3e3e3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+canvas {
+  border: 2px solid steelblue;
+}
+
+.toolbox {
+  background-color: steelblue;
+  border: 1px solid slateblue;
+  display: flex;
+  width: 804px;
+  padding: 1rem;
+}
+
+.toolbox button,
+.toolbox span,
+.toolbox input {
+  background-color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.toolbox > *:last-child {
+  margin-left: auto;
+}
+
+#eraser {
+  &.selected {
+    outline: 2px solid orangered;
+  }
+}
+
+.mouse-pointer {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  outline: 1px solid black;
+  background-color: #fff;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+
+  div {
+    min-height: 150px;
+  }
+
+  div:nth-child(2n) {
+    background-color: lightblue;
+  }
+
+  div:nth-child(2n + 1) {
+    background-color: bisque;
+  }
+
+  #one {
+    padding: 0.5rem;
+  }
+} */
