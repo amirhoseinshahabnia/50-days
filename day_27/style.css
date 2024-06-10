@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: coral;
+  position: relative;
+}
+
+button {
+  border: none;
+  background-color: aliceblue;
+  color: coral;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 1px rgba(255, 200, 200, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.notif-ctn {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.notification {
+  background-color: aliceblue;
+  width: 200px;
+  height: 65px;
+  border-radius: 3px;
+  border: 1px solid coral;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  animation: fade-out 1s 2.1s ease-in-out 1;
+  opacity: 1;
+}
+
+.info {
+  color: slateblue;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
